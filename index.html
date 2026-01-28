@@ -4,7 +4,7 @@
 <script src="javascript 1.js"> </script>
 <script src="javascript 2.js"> </script>
 <meta property="og:title" content="B.MEGANATHAN" />
-<meta property="og:description" content="11 STANDARD,12 STANDARD" />
+<meta property="og:description" content="" />
 <meta property="og:url" content="https://meganathan16.github.io/b.m/" />
 <meta property="og:image" content="https://t3.ftcdn.net/jpg/01/22/14/34/360_F_122143473_7KDnyB7t3Ubi760FXQjSFn8OW0aROBtL.jpg" />
 <meta property="og:image:width" content="100px" />
@@ -34,17 +34,48 @@ body {
 
 /* Page Content */
 .content {padding:20px;}
+
+@keyframes colorGlow {
+  0% {
+    color: #F59E0B;
+    text-shadow: 0 0 10px #F59E0B, 0 0 20px #F59E0B;
+  }
+  25% {
+    color: #FB7185;
+    text-shadow: 0 0 10px #FB7185, 0 0 20px #FB7185;
+  }
+  50% {
+    color: #2563EB;
+    text-shadow: 0 0 10px #2563EB, 0 0 20px #2563EB;
+  }
+  75% {
+    color: #14B8A6;
+    text-shadow: 0 0 10px #14B8A6, 0 0 20px #14B8A6;
+  }
+  100% {
+    color: #A855F7;
+    text-shadow: 0 0 10px #A855F7, 0 0 20px #A855F7;
+  }
+}
+
+.glow-text {
+  font-size: 36px;
+  font-weight: bold;
+  animation: colorGlow 4s infinite alternate;
+}
 </style>
 <script>
 window.onload = function () {
      // Array of Images
-      var backgroundImg=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyB57zuc4bms-hDtWMa-4BZvscIlJDm4r7a9WLaO4SAxUvKM-DDA",
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBinSpWOvAtkxjmkf709O3rjH2ObRbWAEn9s0JcWaeL6LMtCbOrQ",
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKY4J2qIFqkuDnABMzeypywbMSZL1cleS8vpySz0KD02wOYORU1g",
-                        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQkdQT0zN0xDVP-VuvwojSbS5dOstX14eZvJCOWNPxKJ5dWTIc"
-                        ]
+      var backgroundImg = [
+  "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1669023414166-a4cc7c0fe1f5?auto=format&fit=crop&w=800&q=80",
+  "https://wallpapers.com/images/high/futuristic-humanoid-robot-4hhrzpq6s5lv9sip.webp",
+  "https://images.unsplash.com/photo-1647166545674-ce28ce93bdca?auto=format&fit=crop&w=800&q=80"
+]
 
-        setInterval(changeImage, 500);
+
+        setInterval(changeImage, 1000);
        function changeImage() {   
         var i = Math.floor((Math.random() * 4));
 
@@ -73,7 +104,7 @@ $('.container').css('background-color', 'white');
   <h1> B.MEGA   <img class="header-img" src="student.jpg"></h1>
   
 </div>
-<h1> <marquee direction="left" style="color: white;"> ARTIFICIAL INTELLIGENCE AND DATA SCIENCE </marquee></h1>
+<h1> <marquee direction="left" class="glow-text" style="color: white;"> ARTIFICIAL INTELLIGENCE AND DATA SCIENCE </marquee></h1>
 
 
 </body>
@@ -82,7 +113,7 @@ $('.container').css('background-color', 'white');
 <meta name ="veiwport" content ="width =device-width,initial-scale=1">
 <style>
 body {
-  background-image: url("background.jpeg");
+  background-image: url("bg1.png");
 }
 .square{
 padding-top:1px;
